@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>轮播图</title>
+       <link rel="stylesheet"  href="css/carousel-ZSH.css" />
+       <style type="text/css">
+            img{
+                width: 480px;height: 312px;
+            }
+            body{background:white;}
+            #box{margin-top: 200px;}
+       </style>
+       <script src='js/jquery-3.2.1.js'></script>
+       <script src='js/carousel-ZSH.js'></script>
+       <script type="text/javascript">
+            jQuery(function($){
+                $('#box').carousel_ZSH({
+                    width:480,
+                    height:312,
+                    imgs:['img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg','img/5.jpg','img/6.jpg'],
+                    type:'horizontal',
+                    marquee:true,
+                    page:true
+                });
+            });
+       </script>
+    </head>
+    <body>
+        <div id="box">
+            
+        </div>
+    </body>
+</html>
